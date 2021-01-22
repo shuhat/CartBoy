@@ -1,0 +1,112 @@
+html {
+    font-size: 14px;
+    box-sizing: border-box;
+    /*easier for contentng*/
+}
+
+body {
+    background-color:rgb(248, 248, 248);
+    margin: 0;
+    height: 100vh;
+    font-size: 16px;
+    font-family: Helvetica, Arial;
+}
+
+/* Layout */
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(36, 36, 58);
+    color: rgb(209, 199, 199);
+    padding: 1rem;
+}
+header a {
+    color: rgb(209, 199, 199);
+    padding: 1rem;
+}
+main{
+    grid-area: main;
+    padding: 1rem;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(36, 36, 58);
+    color: rgb(248, 248, 248);
+    text-align: center;
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(255, 142, 142);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    color: rgb(248, 248, 248);
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.row.center{
+    justify-content: center;
+}
+
+/* PRODUCT IMAGE SECTION */
+img{
+    border-radius: 0.4rem;
+}
+img.medium{
+    max-width: 28rem;
+    width: 100%;
+}
+
+/* CARD */
+.card{
+    border: 0.1 rem;
+    background-color: rgb(218, 218, 218);
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.card-body{
+    padding: 1rem 0rem 0rem 1rem ;
+}
+.card-body > * {
+    margin-bottom: 0.2 rem;
+}
+.card-body a{
+    color: rgb(43, 43, 43);
+}
+.card-body a:hover{
+    color: rgb(102, 104, 230);
+}
+.price{
+    font-size: 1.rem;
+    padding-left: 1rem ;
+    padding-bottom: 0.5rem;
+}
+.rating{
+    font-size: 1.rem;
+    padding-left: 1rem ;
+    color: burlywood;
+}
